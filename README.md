@@ -13,7 +13,7 @@ year after clicking the button
 - check if button click splits and displays the date
 - do not copy and paste
 - flow diagram
-![](https://i.imgur.com/Q9gGuD6.png)
+- ![](https://i.imgur.com/Q9gGuD6.png)
 
 ## Preview
 
