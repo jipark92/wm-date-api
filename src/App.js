@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 // import './App.css';
+import { fetchDateAPI } from './services/date.api'
+import { useState, useEffect } from 'react'
+import DateButton from './components/DateButton'
+import DateDisplay from './components/DateDisplay';
+
 
 function App() {
+
+  const [getDate, setGetDate] = useState([])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Date API</h1>
+      {/* date button */}
+      <DateButton
+        getDate={getDate}
+        setGetDate={setGetDate}
+        fetchDateAPI={fetchDateAPI}
+      />
+      {/* display date */}
+      <DateDisplay />
     </div>
   );
 }
