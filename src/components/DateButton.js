@@ -6,7 +6,7 @@ export default function DateButton({ dates, setDates, fetchDateAPI }) {
             <button
                 onClick={() => {
                     fetchDateAPI(setDates)
-                    console.log(dates)
+                    console.log(dates.date)
                 }}>DISPLAY DATE</button>
         </>)
 }
