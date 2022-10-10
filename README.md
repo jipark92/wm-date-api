@@ -15,4 +15,4 @@ year after clicking the button
 
 ## Preview
 
-![](https://s3.amazonaws.com/istreet-assets/IExZf_ufJ9jWsXhCVYeq1w/Screen%20Shot%202018-09-26%20at%201.34.12%20PM.png)
+![](https://i.imgur.com/U3B8f2Q.png)
