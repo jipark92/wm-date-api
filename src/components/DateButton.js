@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function DateButton({ getDate, setGetDate, fetchDateAPI }) {
+export default function DateButton({ dates, setDates, fetchDateAPI }) {
     return (
         <>
             <button
                 onClick={() => {
-                    fetchDateAPI(setGetDate)
-                    console.log(getDate)
+                    fetchDateAPI(setDates)
+                    console.log(dates)
                 }}>DISPLAY DATE</button>
         </>)
 }

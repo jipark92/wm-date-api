@@ -1,13 +1,13 @@
 // import './App.css';
 import { fetchDateAPI } from './services/date.api'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import DateButton from './components/DateButton'
 import DateDisplay from './components/DateDisplay';
 
-
 function App() {
 
-  const [getDate, setGetDate] = useState([])
+  const [dates, setDates] = useState([])
+
 
 
   return (
@@ -15,8 +15,8 @@ function App() {
       <h1>Date API</h1>
       {/* date button */}
       <DateButton
-        getDate={getDate}
-        setGetDate={setGetDate}
+        dates={dates}
+        setDates={setDates}
         fetchDateAPI={fetchDateAPI}
       />
       {/* display date */}
