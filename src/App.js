@@ -8,8 +8,8 @@ function App() {
   const [dates, setDates] = useState([])
 
   return (
-    <>
-      <h1>Date API</h1>
+    <div className='flex flex-col items-center justify-center h-screen'>
+      <h1 className='text-3xl font-bold underline'>Date API</h1>
 
       {/* date button */}
       <DateButton
@@ -19,8 +19,8 @@ function App() {
       />
 
       {/* display date */}
-      {dates === [] ? <DateDisplay /> : <DateDisplay dates={dates} />}
-    </>
+      {!dates ? <DateDisplay /> : <DateDisplay dates={dates} />}
+    </div>
   );
 }
 
